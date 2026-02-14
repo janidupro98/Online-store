@@ -1,61 +1,225 @@
-# 🛒 Premium Online Store Project - Team Edition
+ Premium Online Store  
+Enterprise-Grade E-Commerce Application  
 
-A professional, high-end E-commerce application built with **Spring Boot**, **Thymeleaf**, and **Modern CSS**. This repository is organized for a collaborative team of 10 developers, each with their own dedicated workspace.
+A high-end, scalable E-commerce system built using Spring Boot, Thymeleaf, and modern UI technologies.  
+Designed with a Layered Architecture and structured for a 10-member collaborative development team.
 
-## 📁 Project Structure & Assignments
 
-The project is split into 10 independent modules. Each member is responsible for their respective folder:
 
-### **Phase 1: Infrastructure & Auth**
-*   **Member 01: Setup & Infrastructure** (`Member_01_Setup_Infra`)
-    *   Project architecture, lead configuration, and documentation.
-*   **Member 02: Backend Security** (`Member_02_Security_Back-end`)
-    *   Spring Security, Authentication, and User Authorization logic.
-*   **Member 03: User Management UI** (`Member_03_Auth_Frontend`)
-    *   Premium Login and registration page design.
+Project Overview
 
-### **Phase 2: Product & Catalog**
-*   **Member 04: Product Backend** (`Member_04_Product_Back-end`)
-    *   Product Entity, Repositories, and Catalog Service.
-*   **Member 05: Product Frontend** (`Member_05_Product_Frontend`)
-    *   Dynamic Shop Grid and Product Details UI.
+Premium Online Store is a modular, production-ready e-commerce application that demonstrates:
 
-### **Phase 3: Commerce & Search**
-*   **Member 06: Shopping Cart** (`Member_06_Shopping_Cart`)
-    *   Cart logic and Session management.
-*   **Member 07: Orders & Checkout** (`Member_07_Orders_Check-out`)
-    *   Transaction flow and order history.
-*   **Member 08: Search & Uploads** (`Member_08_Search_Uploads`)
-    *   "Beyond CRUD": Advanced filtering and Image upload system.
+- Clean Layered Architecture  
+- Secure Authentication & Authorization  
+- Dynamic Product Catalog  
+- Full Commerce Flow (Cart → Checkout → Orders)  
+- Advanced Search & Uploads  
+- Error Handling & Validation  
+- Reporting & Notifications  
 
-### **Phase 4: Stability & Analytics**
-*   **Member 09: QA & Validation** (`Member_09_Validation_QA`)
-    *   Global error handling (404/500/403) and unit testing.
-*   **Member 10: Reporting & Notifications** (`Member_10_Reporting_Notifications`)
-    *   "Beyond CRUD": Sales analytics and Email/SMS notifications.
+The repository is structured so that each team member works independently within their assigned module.
 
----
 
-## 🛠 Technical Requirements
 
-- **Backend**: Spring Boot (Layered Architecture: Controller → Service → Repository → Entity).
-- **Security**: Spring Security for Auth & Auth (cookie/session).
-- **Validation**: Robust server-side and client-side validation for all forms.
-- **Reliability**: Graceful handling of 404, 400, and 401/403 errors using `@ControllerAdvice`.
+Project Structure & Team Assignments
 
-## 🚀 How to Run (For Members)
+The project is divided into 4 Phases and 10 Independent Modules.
 
-1.  **Navigate** to your specific `Member_XX` folder.
-2.  **Run** the application:
-    ```bash
-    ./mvnw spring-boot:run
-    ```
-3.  **Access** the store at `http://localhost:8080`.
 
----
 
-## 📦 Submission Package Requirements
-As per the assignment rules, each member must ensure their folder contains:
-1.  **Full Source Code** with clear package naming and no dead code.
-2.  **README.md** with setup steps, run instructions, and screenshots.
-3.  **Postman Collection** (if applicable) for API testing.
+Phase 1 – Infrastructure & Authentication
+
+Member 01 – Setup & Infrastructure  
+Folder: Member_01_Setup_Infra  
+
+- Project initialization  
+- Architecture design  
+- Maven configuration  
+- Shared configurations  
+- Technical documentation  
+
+Member 02 – Backend Security  
+Folder: Member_02_Security_Back-end  
+
+- Spring Security configuration  
+- Authentication (Login / Logout)  
+- Authorization (Role-based access)  
+- Session & Cookie management  
+
+Member 03 – User Management UI  
+Folder: Member_03_Auth_Frontend  
+
+- Premium Login page  
+- Registration page  
+- Responsive UI design  
+- Client-side validation  
+
+
+
+Phase 2 – Product & Catalog
+
+Member 04 – Product Backend  
+Folder: Member_04_Product_Back-end  
+
+- Product Entity  
+- Repository Layer  
+- Service Layer  
+- CRUD Operations  
+- Catalog business logic  
+
+Member 05 – Product Frontend  
+Folder: Member_05_Product_Frontend  
+
+- Dynamic product grid  
+- Product details page  
+- Premium UI layout  
+- Thymeleaf integration  
+
+
+
+Phase 3 – Commerce & Search
+
+Member 06 – Shopping Cart  
+Folder: Member_06_Shopping_Cart  
+
+- Cart management logic  
+- Session-based cart storage  
+- Add / Remove / Update items  
+
+Member 07 – Orders & Checkout  
+Folder: Member_07_Orders_Check-out  
+
+- Checkout process  
+- Order placement flow  
+- Order history  
+- Transaction management  
+
+Member 08 – Search & Uploads  
+Folder: Member_08_Search_Uploads  
+
+- Advanced product filtering  
+- Search optimization  
+- Image upload system  
+- Beyond CRUD implementation  
+
+
+
+Phase 4 – Stability & Analytics
+
+Member 09 – QA & Validation  
+Folder: Member_09_Validation_QA  
+
+- Global Exception Handling  
+- Custom error pages (404 / 500 / 403)  
+- @ControllerAdvice usage  
+- Unit testing  
+
+Member 10 – Reporting & Notifications  
+Folder: Member_10_Reporting_Notifications  
+
+- Sales analytics dashboard  
+- Reporting system  
+- Email notifications  
+- SMS integration  
+- Beyond CRUD implementation  
+
+
+Technical Stack
+
+Backend:
+- Spring Boot  
+- Spring MVC  
+- Spring Data JPA  
+- Hibernate  
+
+Security:
+- Spring Security  
+- Session-based Authentication  
+- Role-based Authorization  
+
+Frontend:
+- Thymeleaf  
+- Modern CSS  
+- Responsive Design  
+
+Database:
+- MySQL / H2 (Configurable)
+
+
+
+Architecture
+
+The system follows a Layered Architecture Pattern:
+
+Controller → Service → Repository → Entity
+
+Benefits:
+- Clean separation of concerns  
+- Easy testing  
+- Scalable structure  
+- Maintainable codebase  
+
+
+
+Security Requirements
+
+- Secure login & registration  
+- Password encryption  
+- Role-based access control  
+- Session management  
+- CSRF protection  
+
+
+Validation & Reliability
+
+- Server-side validation  
+- Client-side validation  
+- Graceful error handling  
+- Custom error pages (404, 400, 401, 403, 500)  
+- Global exception handling using @ControllerAdvice  
+
+
+
+How to Run (For Team Members)
+
+1. Navigate to your assigned module:
+
+cd Member_XX_FolderName
+
+2. Run the application:
+
+./mvnw spring-boot:run
+
+3. Access the application:
+
+http://localhost:8080
+
+
+
+Collaboration Rules
+
+- Work only inside your assigned folder  
+- Do not modify other members' modules  
+- Follow consistent coding standards  
+- Use meaningful commit messages  
+- Always pull latest changes before pushing  
+
+
+
+Project Goals
+
+- Demonstrate full-stack Spring Boot expertise  
+- Implement production-ready security  
+- Build scalable modular architecture  
+- Practice real-world team collaboration  
+- Deliver a premium-level e-commerce platform  
+
+
+
+License
+
+This project is developed for academic and collaborative learning purposes.
+
+Premium Online Store  
+Built with Precision. Designed for Scale. Engineered for Excellence.
