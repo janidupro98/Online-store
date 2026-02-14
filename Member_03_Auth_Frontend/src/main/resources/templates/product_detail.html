@@ -12,6 +12,7 @@
 
 <body>
 
+<<<<<<< HEAD
     <!-- Unified Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="navbar-nav mr-auto">
@@ -22,6 +23,49 @@
 
         <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link" th:href="@{/cart}">Cart</a>
+=======
+    <!-- Unified Premium Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Links Left -->
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link" th:href="@{/}">Home</a>
+                <a class="nav-item nav-link" th:href="@{/}">Shop</a>
+            </div>
+
+            <!-- Brand Center -->
+            <a class="navbar-brand py-0" th:href="@{/}">LuxeStore</a>
+
+            <!-- Links Right -->
+            <div class="navbar-nav ml-auto align-items-center">
+                <a class="nav-item nav-link position-relative mr-3" th:href="@{/cart}">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge badge-pill badge-primary position-absolute"
+                        style="top: -5px; right: -8px; font-size: 0.6rem;">0</span>
+                </a>
+
+                <a class="nav-item nav-link font-weight-bold" th:href="@{/login}"
+                    sec:authorize="!isAuthenticated()">Login</a>
+                <a class="btn btn-primary btn-sm rounded-pill px-3 ml-2" th:href="@{/register}"
+                    sec:authorize="!isAuthenticated()">Join Now</a>
+
+                <div class="dropdown" sec:authorize="isAuthenticated()">
+                    <a class="nav-item nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-circle mr-1"></i> <span sec:authentication="name">User</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow-sm border-0" aria-labelledby="userDropdown"
+                        style="border-radius: 12px;">
+                        <a class="dropdown-item small" href="#">Profile</a>
+                        <a class="dropdown-item small" href="#">Orders</a>
+                        <div class="dropdown-divider"></div>
+                        <form th:action="@{/logout}" method="post">
+                            <button type="submit" class="dropdown-item small text-danger btn-link">Logout</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
         </div>
     </nav>
 

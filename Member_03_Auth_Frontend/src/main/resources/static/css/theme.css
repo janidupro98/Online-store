@@ -8,7 +8,12 @@
     --card-bg: #ffffff;
     --text-main: #1f2937;
     --text-muted: #6b7280;
+<<<<<<< HEAD
     --navbar-bg: rgba(255, 255, 255, 0.85); /* Glassmorphism */
+=======
+    --navbar-bg: rgba(255, 255, 255, 0.85);
+    /* Glassmorphism */
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
     --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.15);
@@ -39,7 +44,12 @@ body {
 .navbar-brand {
     font-weight: 700;
     font-size: 1.5rem;
+<<<<<<< HEAD
     color: #4a5568 !important; /* Darker grey for contrast */
+=======
+    color: #4a5568 !important;
+    /* Darker grey for contrast */
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
     letter-spacing: -0.5px;
     position: absolute;
     left: 50%;
@@ -71,7 +81,11 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+<<<<<<< HEAD
     text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+=======
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
 }
 
 .hero p {
@@ -89,13 +103,21 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
+<<<<<<< HEAD
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+=======
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn-hero:hover {
     transform: translateY(-2px);
+<<<<<<< HEAD
     box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+=======
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
     text-decoration: none;
     color: #667eea;
 }
@@ -122,7 +144,12 @@ body {
 }
 
 .card:hover .card-img-top {
+<<<<<<< HEAD
     transform: scale(1.05); /* Zoom effect */
+=======
+    transform: scale(1.05);
+    /* Zoom effect */
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
 }
 
 .card-body {
@@ -164,21 +191,45 @@ body {
 }
 
 @keyframes fadeIn {
+<<<<<<< HEAD
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+=======
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
+<<<<<<< HEAD
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+=======
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
 ::-webkit-scrollbar-thumb {
     background: #c1c1c1;
     border-radius: 4px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
 ::-webkit-scrollbar-thumb:hover {
     background: #a8a8a8;
 }
@@ -192,12 +243,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
 }
 
 @keyframes gradientMove {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+=======
+    margin: 0;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
 }
 
 .glass-card {
@@ -214,22 +283,38 @@ body {
     border: 1.5px solid transparent !important;
     transition: all 0.3s ease;
     padding: 0.8rem 1.2rem !important;
+<<<<<<< HEAD
+=======
+    font-size: 0.95rem !important;
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
 }
 
 .auth-input:focus {
     background: #ffffff !important;
     border-color: #667eea !important;
     box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1) !important;
+<<<<<<< HEAD
+=======
+    outline: none;
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
 }
 
 .auth-btn {
     background: var(--primary-gradient);
     border: none;
+<<<<<<< HEAD
     color: white;
+=======
+    color: white !important;
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
     font-weight: 600;
     letter-spacing: 0.5px;
     padding: 0.8rem !important;
     transition: all 0.3s ease;
+<<<<<<< HEAD
+=======
+    cursor: pointer;
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
 }
 
 .auth-btn:hover {
@@ -239,12 +324,22 @@ body {
 }
 
 .auth-link {
+<<<<<<< HEAD
     color: #667eea;
+=======
+    color: #667eea !important;
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
     font-weight: 600;
     transition: color 0.2s;
 }
 
 .auth-link:hover {
+<<<<<<< HEAD
     color: #764ba2;
     text-decoration: none;
 }
+=======
+    color: #764ba2 !important;
+    text-decoration: none;
+}
+>>>>>>> 3c97f46 (Update Authentication Frontend for Member 3)
